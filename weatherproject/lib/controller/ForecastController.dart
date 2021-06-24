@@ -85,4 +85,11 @@ class ForecastController extends GetxController {
   Future<void> start() async {
     if(city.value=='') await getLatestWeather('Hà Nội');
   }
+  
+  @override
+  void onInit()
+  {
+    super.onInit();
+    start();
+  }
 }

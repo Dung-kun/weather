@@ -18,7 +18,6 @@ class WeatherView extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    _controller.start();
     return Scaffold(
         body: 
         Stack(
